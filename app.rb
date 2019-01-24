@@ -33,9 +33,9 @@ get "/reversename/:name" do
     @product = params[:number1].to_i * params[:number2].to_i
     elsif params[:operation].to_s == 'divide'
     @product = params[:number1].to_i / params[:number2].to_i
-    elsif
-    @product = params[:number1].to_i * params[:number2].to_i
-    elsif
-    @product = params[:number1].to_i * params[:number2].to_i
+    elsif params[:operation].to_s == 'add'
+    @product = params[:number1].to_i + params[:number2].to_i
+    elsif params[:operation].to_s == 'subtract'
+    @product = params[:number1].to_i - params[:number2].to_i
   end
 end
