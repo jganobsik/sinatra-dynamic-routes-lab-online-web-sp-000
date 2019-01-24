@@ -10,7 +10,7 @@ get "/reversename/:name" do
   end
   
   
-    get "/square/:number" do
+  get "/square/:number" do
     @product = params[:number].to_i * params[:number].to_i
     "#{@product}"
   end
@@ -25,6 +25,6 @@ get "/reversename/:name" do
   
    @product = params[:word1].to_s + ' ' +  params[:word2].to_s + ' ' + params[:word3].to_s + ' ' + params[:word4].to_s + ' ' + params[:word5].to_s
     "#{@product}"
-end
+  end
 
 end
