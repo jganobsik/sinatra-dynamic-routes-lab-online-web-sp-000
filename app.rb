@@ -21,7 +21,7 @@ get "/reversename/:name" do
  #   
 #    "#{@product}"
 #  end 
-  get '/say/:word1/:word2/:word3/:word4/:word5' 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
   
    @product = params[:word1].to_s + ' ' +  params[:word2].to_s + ' ' + params[:word3].to_s + ' ' + params[:word4].to_s + ' ' + params[:word5].to_s
     "#{@product}"
