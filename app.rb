@@ -38,4 +38,6 @@ get "/reversename/:name" do
     elsif params[:operation].to_s == 'subtract'
     @product = params[:number1].to_i - params[:number2].to_i
   end
+   "#{@product}"
+ end
 end
