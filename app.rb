@@ -29,6 +29,13 @@ get "/reversename/:name" do
   end
 
   get '/:operation/:number1/:number2' do 
-    if 
-
+    if params[:operation].to_s == 'multiply'
+    @product = params[:number1].to_i * params[:number2].to_i
+    elsif params[:operation].to_s == 'divide'
+    @product = params[:number1].to_i / params[:number2].to_i
+    elsif
+    @product = params[:number1].to_i * params[:number2].to_i
+    elsif
+    @product = params[:number1].to_i * params[:number2].to_i
+  end
 end
