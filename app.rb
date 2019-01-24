@@ -16,8 +16,9 @@ get "/reversename/:name" do
   end
   
  get '/say/:number/:phrase' do 
-      @product = params[:number].to_i.times do 
-        params[:phrase].to_s
+      @product = []
+      params[:number].to_i.times do 
+     @product << params[:phrase].to_s
    end
    "#{@product}"
   end 
