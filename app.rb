@@ -28,6 +28,7 @@ get "/reversename/:name" do
     "#{@product}"
   end
 
-
+  get '/:operation/:number1/:number2' do 
+    if 
 
 end
